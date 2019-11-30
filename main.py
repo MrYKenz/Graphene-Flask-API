@@ -5,7 +5,6 @@ from datetime import datetime
 
 # initialise Flask app
 app = Flask(__name__)
-app.debug = True
 
 # define users
 class User(graphene.ObjectType):
@@ -24,7 +23,6 @@ class CreateUser(graphene.Mutation):
         # handles Graphql Context
         # if info.context.get('isAdmin'):
         #     username = username.upper()
-
         user = User(username=username)
         return CreateUser(user=user)
 
@@ -47,8 +45,8 @@ class Mutations(graphene.ObjectType):
 schema = graphene.Schema(query=Query, mutation=Mutations) 
 
 # Flask Graphql Route
-app.add_url_rule('/graphql', view_func=GraphQLView.as_view('graphql', schema=schema, graphiql=True, context={'isAdmin': True}))
+app.add_url_rule('/graphql', view_func=GraphQLView.as_view('graphql', schema=schema, graphiql=True))
 
 # start here
 if __name__ == "__main__":
-    app.run()
+    app.run(host="0.0.0.0", port=5000, debug=True)
