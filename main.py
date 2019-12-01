@@ -4,7 +4,6 @@ from flask_sqlalchemy import SQLAlchemy
 import graphene
 from graphene_sqlalchemy import SQLAlchemyObjectType, SQLAlchemyConnectionField
 import os
-from datetime import datetime
 
 # initialise Flask app
 app = Flask(__name__)
