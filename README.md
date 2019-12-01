@@ -9,7 +9,7 @@ However, I have used a docker container for this project that can be used if bui
 Example Queries:
 
 Create User
-```json
+```graphql
 mutation {
   createUser(username:"kenzy"){
     user{
@@ -19,7 +19,7 @@ mutation {
 }
 ```
 Create Post
-```json
+```graphql
 mutation {
   createPost(username:"kenzy", title:"Post 1", body:"Testing..."){
     post{
@@ -33,7 +33,7 @@ mutation {
 }
 ```
 Fetch Users and Posts
-```json
+```graphql
 {
   allUsers {
     edges {
@@ -53,7 +53,7 @@ Fetch Users and Posts
 }
 ```
 Fetch Posts:
-```json
+```graphql
 {
   allPosts{
     edges{
@@ -71,7 +71,7 @@ Fetch Posts:
 
 With Variables:
 Create User
-```json
+```graphql
 mutation userCreate($usernameVar: String!){
   createUser(username: $usernameVar){
     user{
@@ -80,7 +80,7 @@ mutation userCreate($usernameVar: String!){
   }
 }
 Create Post
-```json
+```graphql
 mutation postCreate($usernameVar: String!, $titleVar: String!, $bodyVar: String!){
   createPost(username: $usernameVar, title: $titleVar, body: $bodyVar){
     post{
