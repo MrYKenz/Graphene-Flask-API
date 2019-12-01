@@ -1,4 +1,4 @@
-# Graphene Flask GraphQL API
+# Graphene Flask GraphQL API ![alt text](https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/GraphQL_Logo.svg/240px-GraphQL_Logo.svg "GraphQL")
 
 A simple GraphQL API using Flask and Flask Graqhql to create an API route for the server and Graphene to create Python based Schema. All dependencies (python modules/libraries) can be found in requirements.txt and installed with pip. 
 ```bash
