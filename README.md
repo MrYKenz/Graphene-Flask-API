@@ -6,7 +6,7 @@ pip install -r requirements.txt
 ```
 However, I have used a docker container for this project that can be used if building a microservice in a microservice architecture and the Dockerfile will run this command.
 
-Example Queries:
+### Example Queries:
 
 Create User
 ```graphql
@@ -68,8 +68,8 @@ Fetch Posts:
   }
 }
 ```
+#### With Variables:
 
-With Variables:
 Create User
 ```graphql
 mutation userCreate($usernameVar: String!){
