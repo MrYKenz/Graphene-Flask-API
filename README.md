@@ -79,6 +79,7 @@ mutation userCreate($usernameVar: String!){
     }
   }
 }
+```
 Create Post
 ```graphql
 mutation postCreate($usernameVar: String!, $titleVar: String!, $bodyVar: String!){
