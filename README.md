@@ -6,10 +6,7 @@ pip install -r requirements.txt
 ```
 However, I have used a Docker Container with the dependencies outlined in the Dockerfile, this can also be used to build a microservice in a microservice architecture but as GraphQL aims for one endpoint schema stitching or Apollo Federation should be used to join the API endpoints.
 
-Flask Graphql provides a graphiql playground to run queries against the enpoint which can be used for testing, this is found at:
-```
-localhost:5000/graphql
-```
+Flask Graphql provides a graphiql playground to run queries against the endpoint which can be used for testing.
 
 ## Example Queries:
 
